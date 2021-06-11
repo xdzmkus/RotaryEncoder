@@ -10,6 +10,7 @@ ArduinoRotaryEncoder            KEYWORD1
 RotaryEncoder                   KEYWORD1
 ENCODER_EVENT                   KEYWORD1
 EncoderEventHandler             KEYWORD1
+EventsQueue                     KEYWORD1
 
 ########################################
 # Methods and Functions (KEYWORD2)
@@ -22,6 +23,10 @@ getPinLeft                      KEYWORD2
 getPinRight                     KEYWORD2
 catchTicks                      KEYWORD2
 
+push                            KEYWORD2
+pop                             KEYWORD2
+length                          KEYWORD2
+ 
 ########################################
 # Constants (LITERAL1)
 ########################################
