@@ -3,7 +3,9 @@
 #define ENC1_PIN D1 // encoder S1 pin
 #define ENC2_PIN D2	// encoder S2 pin
 
-ArduinoRotaryEncoder encoder(ENC2_PIN, ENC1_PIN);
+void handleEncoderEvent(const RotaryEncoder*, ENCODER_EVENT);
+
+ArduinoRotaryEncoder encoder(ENC2_PIN, ENC1_PIN, handleEncoderEvent);
 
 void handleEncoderEvent(const RotaryEncoder* enc, ENCODER_EVENT eventType)
 {
@@ -26,8 +28,6 @@ void setup()
 	Serial.println(F("RotaryEncoder"));
 
 	encoder.initPins();
-
-	encoder.setEventHandler(handleEncoderEvent);
 }
 
 void loop()

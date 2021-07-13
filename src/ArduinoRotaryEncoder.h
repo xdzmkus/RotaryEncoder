@@ -24,7 +24,7 @@ public:
 	{
 		pinMode(pinLeft, INPUT_PULLUP);
 		pinMode(pinRight, INPUT_PULLUP);
-	}
+	};
 
 protected:
 
